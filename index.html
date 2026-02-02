@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div id="proposalSection">
+            <h1 id="mainQuestion">Will you be my Valentine?</h1>
+            <div class="button-box" id="buttonContainer">
+                <button id="yesBtn" class="btn yes-btn">Yes!</button>
+                <button id="noBtn" class="btn no-btn">No</button>
+            </div>
+        </div>
+
+        <div id="messageSection" class="hidden">
+            <h1>You just made my day! ❤️</h1>
+            <p>
+                "I would rather share one lifetime with you<br> 
+                than face all the ages of this world alone."
+            </p>
+            <button id="proceedToMenuBtn" class="btn yes-btn">Let's Plan Our Date ✨</button>
+        </div>
+
+    <div id="menuSection" class="hidden">
+        <h1>It's a Date! ❤️</h1>
+        <form id="detailsForm">
+        
+            <div class="menu-group">
+                <h3>Where are we going?</h3>
+                <label><input type="radio" name="restaurant" value="Olive Garden" required> Olive Garden 🍝</label>
+                <label><input type="radio" name="restaurant" value="Texas Roadhouse"> Texas Roadhouse 🥩</label>
+                <label><input type="radio" name="restaurant" value="Cracker Barrel"> Cracker Barrel 🥞</label>
+                <label><input type="radio" name="restaurant" value="Other"> Other (Write in notes below) ✏️</label>
+            </div>
+
+            <div class="menu-group">
+                <h3>What time?</h3>
+                <div class="time-grid">
+                    <label><input type="radio" name="time" value="4:00 PM" required> 4:00 p.m.</label>
+                    <label><input type="radio" name="time" value="5:00 PM"> 5:00 p.m.</label>
+                    <label><input type="radio" name="time" value="6:00 PM"> 6:00 p.m.</label>
+                    <label><input type="radio" name="time" value="7:00 PM"> 7:00 p.m.</label>
+                    <label><input type="radio" name="time" value="Other"> Other</label>
+                </div>
+            </div>
+
+            <div class="menu-group">
+                <h3>Extra Notes / Custom Choices</h3>
+                <textarea name="extra_notes" placeholder="Type your custom restaurant, specific time, or any food allergies here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn yes-btn">Lock it in! 💌</button>
+        </form>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
